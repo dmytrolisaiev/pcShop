@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initial-scale=1.0>
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="dest/css/style.css">
+</head>
+<body class="registerBody">
+
+<div class="register_wrapper">
+
+
+
+<div class="form_wrap">
+<form class= "form_register" action="#" method="post">
+<div class="preloader">
+    <div class="preloader__image"></div>
+    </div>
+<h1>Регистрация</h1>
+<label for="username">
+Имя:* </label>
+<input type="text" class="register_input formRequire" autocomplete="off" name="username" placeholder="Введите ваше имя" value="" required>
+
+<label for="usermail"  >
+E-mail:* </label>
+<input type="email" class="register_input usermail formRequire" autocomplete="off" name="useremail" placeholder="Введите E-mail" value="" required>
+
+<label for="userpassword" >
+Пароль </label>
+<input type="password" class="register_input password formRequire" autocomplete="off" name="userpassword" placeholder="Введите пароль" value="" required>
+<label for="userpassword" >
+Подтвердите пароль </label>
+<input type="password" class="register_input password2 formRequire" name="userpassword2" placeholder="Подтвердите пароль" value="" required>
+<label for="check" class="checkboxLabel chekL">
+ <input class="registercheck formRequire" id="check" name="check" type="checkbox" checked>   
+<span class="check__box"></span>Соглашаюсь с политикой сайта 
+</label>
+
+<input class="register_submit" type="submit" value="Зарегистрироваться">
+<p >Есть аккаунт? <a class="loginLink" href="login.php"> Войти </a> </p>
+<div class="register_Error"></div>
+<div class="register_Succes"></div>
+
+</form>
+
+</div>
+</div>
+<script src="js/register.js"></script>
+</body>
+
+
+

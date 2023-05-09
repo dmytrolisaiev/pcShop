@@ -1,0 +1,209 @@
+.shop_wrapper{
+    position: relative;
+}
+
+.cart {
+    display: none;
+    min-width: 50%;
+    height: 70%;
+    background-color: rgb(52, 59, 57);
+    position: fixed;
+    top:10%;
+    left: 25%;
+    z-index: 1000;
+    border: 2px solid rgb(255, 55, 0);
+    padding: 25px;
+    
+}
+
+
+.cart__close {
+    font-size: 30px;
+    position: absolute;
+    top:-10px;
+    right: -10px;
+   width: 40px;
+   height: 40px;
+    transition: transform 1s;
+    color: rgba(225, 140, 4, 0.83);
+    border-radius: 20%;
+    background-color: rgb(15, 37, 35);
+    text-align: center;
+}
+.cart__close:hover{
+    cursor: pointer;
+   }
+.cart__container {
+    position: relative;
+    
+}
+
+.cart__product {
+    position: relative;
+    margin: 5px;
+    border: 1px solid #ffff;
+    display: flex;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
+.cart__product-remove {
+    position: absolute;
+    top:0%;
+    right: 0;
+    width: 100px;
+    height: 40px;
+    background-color: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart__product-remove:hover {
+    
+    cursor: pointer;
+   background-color: rgb(187, 129, 88);
+}
+
+
+
+.cart__product-photo {
+    max-width: 200px;
+}
+.cart__product-photo img{
+    object-fit: cover;
+}
+.cart__product-info {
+    
+}
+.cart__product-title {
+    padding: 10px;
+    padding-top: 0;
+    max-width: 85%;
+}
+.cart__product-price {
+    padding: 10px;
+}
+.cart__product-actions {
+    padding: 10px;
+    display: flex;
+}
+.cart__product-actions button {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    font-size: 20px;
+    background-color: cadetblue;
+}
+.cart__product-actions button:hover {
+   cursor: pointer;
+   background-color: rgb(187, 129, 88);
+}
+
+
+.cart__product-actions input {
+    color: yellow;
+    background-color: chocolate;
+    text-align: center;
+    min-width: 25px;
+    max-width: 2em;
+    font-size: 24px;
+    
+    
+}
+.cart__product-summary {
+    position: absolute;
+    bottom: 0px;
+    right: 25px;
+    padding: 10px;
+    color: rgb(255, 132, 0);
+    text-align: right;
+}
+
+.cart__phone {
+color: white;
+font-size: 18px;
+}
+.cart__fone-input {
+    font-size: 20px;
+    background-color: darkslategray;
+    color: #fff;
+    padding: 10px;
+}
+
+.cart__summary {
+   
+    color: rgb(255, 41, 3);
+    width: 65%;
+    font-size: 24px;
+    text-align: right;
+}
+.cart__buy-button:hover {
+    cursor: pointer;
+    background-color: rgb(2, 53, 31);
+    
+}
+.cart__buy-button {
+    color: yellow;
+padding: 10px;
+width: 240px;
+height: 48px;
+display: block;
+font-size: 20px;
+background-color: rgb(27, 100, 12);
+    
+}
+
+.cart.open{
+    display: block;
+    overflow: auto;
+}
+
+body.active{
+    overflow: hidden;
+}
+
+
+
+
+
+.cart__title.WithProduct {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: orange;
+    padding: 10px 0px;
+}
+
+.cart__title {
+display: none;
+}
+
+.cart__message.WithProduct {
+display: none;
+}
+.cart__message {
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(255, 204, 0);
+    padding: 10px;
+    
+}
+
+
+
+.cart__bottom {
+    display: none;
+}
+
+.cart__bottom.WithProduct {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: flex-end;
+    margin-top: 50px;
+    bottom: -150px;
+    gap: 10px;
+    right: 25px;
+}
